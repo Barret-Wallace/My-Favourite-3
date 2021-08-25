@@ -1,0 +1,32 @@
+#Home{
+background-image: url('https://th.bing.com/th/id/R777a1b03f06b923b60a3319b0c7c97a9?rik=I4mbdExAhRpjSg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fCRU7lJc.jpg&ehk=CadS1BEwisMTTYrGWoZBIQzA0Xtnfi%2bjTo8INnIRW50%3d&risl=&pid=ImgRaw');
+background-size: cover;
+height: 100%;
+justify-content: center;
+align-items: center;
+text-align: center;
+display: flex;
+flex-direction: column;
+}
+#Home h1{
+color: white;
+}
+.container{
+margin-top: 50px;
+}
+.carousel-inner img{
+border-radius: 75%;
+margin-top: 30px;
+height: 275px;
+}
+#Hobbies h1{
+text-align: center;
+}
+#hobs{
+background: red;
+}
+.carousel-content{
+color: white;
+font-size: 20px;
+margin-top: 27px;
+}

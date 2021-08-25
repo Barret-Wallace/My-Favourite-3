@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--<nav> represents a part of an html page, who's purpose is to provide navigation links, such as menus and other stuff.-->
+    <!--class="navbar-inverse" adds a black background colour.-->
+    <nav class="navbar-inverse">
+        <!--class="navbar-header" adds a floating effect to the div.-->
+        <div class="navbar-header">
+            <!--class="navbar-toggle" is used when the screen is below 768px, It displays a navigation button and hides the button when screen is above 768px.-->
+            <!--data-target="#MyNavbar" is used when the button is clicked, this will open the menu having the id #MyNavbar-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+                <!--icon-bar adds a tiny bar inside the button-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <!--collapse hides the menu when screen is small-->
+        <!--navbar-collapse does the opposite-->
+        <div class="collapse navbar-collapse" id="MyNavbar">
+            <!--Nav is resposible for the padding between menu items-->
+            <!--Navbar-Nav is responsible for floating the menu horizontally-->
+            <ul class="nav navbar-nav">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Hobbies">Hobbies</a></li>
+                <li><a href="#Section-2">Sec-2</a></li>
+                <li><a href="#Section-3">Sec-3</a></li>
+                <li><a href="#Section-4">Sec-4</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+    <section id="Home">
+        <h1>Elan Kalra</h1>
+    </section>
+    <section id="Hobbies">
+    <h1>My Hobbies</h1>
+        <!--class="slide" displays the entire content to an abudant form of slides-->
+        <!--class="carousel slide" gives the desired look and feel and even the padding and margin to the slides.  It also puts the slides together-->
+    <div class="carousel slide" id="hobs" data-ride="carousel"><!--data-ride="carousel" gives a carousel automation allowing the slides to move on its own-->
+        <!--class="carousel-inner" makes sure that everything inside the carousel is alligned propaerly-->
+        <!--The div below holds only the slides and not the left and right buttons-->
+        <div class="carousel-inner">
+            <!--class="item actice" is basically, the slide which is on the screen at first.-->
+            <div class="item active">
+                <center>
+                    <!--target="_blank" redirects you to a new tab instead of the one being used initially.-->
+                <a href="https://code.org/" target="_blank"><img class="img-resposive" src="https://www.bing.com/th?id=AMMS_bbe5110e10302bd09abd8e194e1ed52d&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&cdv=1&dpr=1.25&pid=16.1"></a>
+                    <!--class="carousel-content" is the writing and text which will be displayed below.  This is responsible for the padding font and margin of text.-->
+                <div class="carousel-content">
+                    <p>I like Computer Programming</p>
+                </div>
+                </center>
+            </div>
+
+            <!--class="item" basically holds an individual slide and it will be respnsible for padding, margin and other properties-->
+            <div class="item">
+                <center>
+                <a href="https://en.wikipedia.org/wiki/Yo-yo" target="_blank"><img class="img-resposive" src="download.jfif"></a>
+                <div class="carousel-content">
+                    <p>Yoyoing</p>
+                </div>
+                </center>
+            </div>
+        </div>
+        <!--left and right controls code starts here-->
+        <!--data-slide="prev" is used when you click on the <a> tag, then your previous slide is displayed and vice versa for data-slide="next"-->
+        <!--class="left" places the icon on the left side of the div and vice versa for class="right"-->
+        <!--class="carousel-control" places the icon on vertical center and adds look and feel properties-->
+        <a href="#hobs" data-slide="prev" class="left  carousel-control"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a href="#hobs" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    </section>
+    </div>
+</body>
+
+</html>
